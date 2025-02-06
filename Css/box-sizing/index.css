@@ -1,0 +1,15 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box1{
+    /*box-sizing: content-box;*/
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background: deepskyblue;
+    border:10px solid pink;
+    padding: 10px;
+}
