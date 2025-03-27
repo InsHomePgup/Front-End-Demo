@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            margin: 60px;
+            /* 声明一个容器 */
+            display: grid;
+            /*  声明列的宽度  */
+            grid-template-columns: repeat(3, 100px);  /*3排，每个宽度是100px*/
+            /*  声明行的高度  */
+            grid-template-rows: 100px 150px; /* 2行，第一行100px  第二行 150px*/
+            /*  声明行间距和列间距  */
+            grid-gap: 20px;
+        }
+        .one {
+            background: #19CAAD;
+        }
+        .two {
+            background: #8CC7B5;
+        }
+        .three {
+            background: #D1BA74;
+        }
+        .four {
+            background: #BEE7E9;
+        }
+        .five {
+            background: #E6CEAC;
+        }
+        .six {
+            background: #ECAD9E;
+        }
+        .item {
+            text-align: center;
+            font-size: 200%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="one item">One</div>
+    <div class="two item">Two</div>
+    <div class="three item">Three</div>
+    <div class="four item">Four</div>
+    <div class="five item">Five</div>
+    <div class="six item">Six</div>
+</div>
+</body>
+</html>

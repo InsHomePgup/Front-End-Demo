@@ -1,0 +1,355 @@
+/* 基础样式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #3498db;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+h3 {
+    color: #2980b9;
+    margin: 15px 0 10px;
+}
+
+h4 {
+    color: #16a085;
+    margin: 10px 0 5px;
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.demo-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.demo-section:last-child {
+    border-bottom: none;
+}
+
+/* 容器基础样式 */
+.container {
+    display: flex;
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    min-height: 100px;
+}
+
+/* 项目基础样式 */
+.item {
+    background-color: #3498db;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    min-width: 70px;
+}
+
+.tall {
+    height: 80px;
+    line-height: 60px;
+}
+
+/* display: flex */
+.display-flex {
+    /* 默认已设置 display: flex */
+}
+
+/* flex-direction */
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+/* flex-wrap */
+.flex-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+/* flex-flow */
+.flex-flow-row-wrap {
+    flex-flow: row wrap;
+}
+
+.flex-flow-column-wrap {
+    flex-flow: column wrap;
+    height: 200px;
+}
+
+/* justify-content */
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+/* align-items */
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.align-items-flex-end {
+    align-items: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+/* align-content */
+.align-content-stretch,
+.align-content-flex-start,
+.align-content-flex-end,
+.align-content-center,
+.align-content-space-between,
+.align-content-space-around,
+.align-content-space-evenly {
+    flex-wrap: wrap;
+    height: 200px;
+}
+
+.align-content-stretch {
+    align-content: stretch;
+}
+
+.align-content-flex-start {
+    align-content: flex-start;
+}
+
+.align-content-flex-end {
+    align-content: flex-end;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-space-between {
+    align-content: space-between;
+}
+
+.align-content-space-around {
+    align-content: space-around;
+}
+
+.align-content-space-evenly {
+    align-content: space-evenly;
+}
+
+/* order */
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+/* flex-grow */
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+/* flex-shrink */
+.flex-shrink-container {
+    width: 100%;
+}
+
+.flex-shrink-container .item {
+    width: 200px;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+    flex-shrink: 1;
+}
+
+.flex-shrink-2 {
+    flex-shrink: 2;
+}
+
+/* flex-basis */
+.flex-basis-auto {
+    flex-basis: auto;
+}
+
+.flex-basis-0 {
+    flex-basis: 0;
+}
+
+.flex-basis-100px {
+    flex-basis: 100px;
+}
+
+.flex-basis-200px {
+    flex-basis: 200px;
+}
+
+/* flex */
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-auto {
+    flex: auto;
+}
+
+.flex-none {
+    flex: none;
+}
+
+/* align-self */
+.container:has(.align-self-auto) {
+    height: 150px;
+}
+
+.align-self-auto {
+    align-self: auto;
+}
+
+.align-self-flex-start {
+    align-self: flex-start;
+}
+
+.align-self-flex-end {
+    align-self: flex-end;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-baseline {
+    align-self: baseline;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .align-content-stretch,
+    .align-content-flex-start,
+    .align-content-flex-end,
+    .align-content-center,
+    .align-content-space-between,
+    .align-content-space-around,
+    .align-content-space-evenly,
+    .flex-flow-column-wrap {
+        height: auto;
+    }
+}
