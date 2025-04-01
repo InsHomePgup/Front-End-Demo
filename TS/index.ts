@@ -44,16 +44,22 @@ console.log(add('A', 'B')); // 'AB'
 
 /**
  * 使用type声明函数的类型
+ * type 类型名称 = (参数:类型,参数:类型) => 返回值类型
  */
 type GreetFunction = (name: string) => string;
 const greet: GreetFunction = (name) => `Hello, ${name}!`;
 
 /**
  * 使用interface声明函数的类型
+ *
+ * interface 函数名 {
+ *     (参数:类型,参数:类型):返回值类型
+ * }
  */
 
 interface Greet {
-    (name: string): string;
+    (name: string,age?:number): string;
 }
 const greet02: Greet = (name) => `Hello, ${name}!`;
+const greet03: Greet = (name,age) => `Hello, ${name}! You are ${age}`;
 
